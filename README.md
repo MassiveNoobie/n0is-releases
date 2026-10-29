@@ -16,9 +16,9 @@ The initial release target is **macOS 26 or newer on Apple Silicon** (`macos-arm
 
 ## Release status
 
-[Download the macOS app preview](https://github.com/MassiveNoobie/n0is-releases/releases/tag/n0is-v0.1.0-preview.1) · [Runtime pack and checksums](https://github.com/MassiveNoobie/n0is-releases/releases/tag/runtime-0.1.0)
+[Model/runtime pack and checksums](https://github.com/MassiveNoobie/n0is-releases/releases/tag/runtime-0.1.0)
 
-The core app is about 11 MB; voice and Rug download separately during the unlock journey. This is an ad-hoc signed developer preview, not a notarized production installer. Read the preview release notes for current limitations.
+This repository publishes the model/runtime downloads and installation catalog for Neo, voice, and Rug. The n0is desktop application is not published here. Desktop app bundles, installers, and app ZIP files remain local until a desktop app release is explicitly requested.
 
 The first runtime pack is `runtime-0.1.0`. Its manifest and component archives are published together after verification. Unpublished or incomplete releases are not offered as ready to install.
 

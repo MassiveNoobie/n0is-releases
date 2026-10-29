@@ -28,6 +28,8 @@ Do not publish a placeholder manifest containing made-up hashes or URLs that do 
 These are release validation requirements. They are not an assertion that the initial repository foundation already passes them.
 
 
-## Catalog channel
+## Publishing scope and catalog channel
 
-Keep the tested runtime-pack release marked Latest: the app reads its `manifest-macos-arm64.json` asset. App previews are prereleases and must not replace that Latest runtime catalog. A future stable app release must retain the catalog asset or leave the runtime pack marked Latest.
+Publish model/runtime packages, their source/license provenance, checksums, and installation manifests only. Do not upload the n0is desktop application, app bundles, installers, or app ZIP archives unless a later user instruction explicitly requests a desktop app release.
+
+Keep the tested runtime-pack release marked Latest: the local app reads its `manifest-macos-arm64.json` asset. Desktop app builds remain local for now.
