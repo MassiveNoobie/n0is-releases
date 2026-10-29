@@ -27,3 +27,7 @@ Do not publish a placeholder manifest containing made-up hashes or URLs that do 
 
 These are release validation requirements. They are not an assertion that the initial repository foundation already passes them.
 
+
+## Catalog channel
+
+Keep the tested runtime-pack release marked Latest: the app reads its `manifest-macos-arm64.json` asset. App previews are prereleases and must not replace that Latest runtime catalog. A future stable app release must retain the catalog asset or leave the runtime pack marked Latest.
