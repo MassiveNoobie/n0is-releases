@@ -16,7 +16,9 @@ The initial release target is **macOS 26 or newer on Apple Silicon** (`macos-arm
 
 ## Release status
 
-This repository starts as a release foundation. A repository or manifest alone does not make a component downloadable: its matching assets must be built, verified, and attached to a published release first. Unpublished or incomplete releases must not be offered by the app as ready to install.
+The first runtime pack is `runtime-0.1.0`. Its manifest and component archives are published together after verification. Unpublished or incomplete releases are not offered as ready to install.
+
+The app presents three quests: give Neo a brain, add local voice, and open Rug’s diagram tools. Downloads explain what they unlock; completion is earned through a real local model answer, a user-started transcription, and successful opening of a practice board. Installing a file alone does not award XP.
 
 Each published runtime release has an immutable tag, a machine-readable manifest, checksummed component assets, provenance information, and release notes. A small channel document may select a tested release. Existing installations keep working when the network or release service is unavailable.
 
