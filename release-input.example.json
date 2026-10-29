@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "release": "runtime-0.1.0",
+  "platform": "macos-arm64",
+  "minimum_os": "26.0",
+  "components": [
+    {
+      "id": "ollama",
+      "version": "0.40.13",
+      "file": "artifacts/ollama-darwin.tgz",
+      "url": "https://github.com/ollama/ollama/releases/download/v0.40.13/ollama-darwin.tgz",
+      "entrypoint": "ollama",
+      "format": "tar.gz",
+      "source_url": "https://github.com/ollama/ollama/tree/v0.40.13",
+      "license_url": "https://github.com/ollama/ollama/blob/v0.40.13/LICENSE"
+    },
+    {
+      "id": "voice",
+      "version": "0.1.0",
+      "file": "artifacts/n0is-voice-macos-arm64.tar.gz",
+      "entrypoint": "qwen_asr",
+      "format": "tar.gz",
+      "protocol": "neo-asr-snapshots-v1",
+      "source_url": "https://github.com/antirez/qwen-asr/tree/924694251d9e0f18e5d86bbd06aa3ab5f870002d",
+      "license_url": "https://github.com/antirez/qwen-asr/blob/924694251d9e0f18e5d86bbd06aa3ab5f870002d/LICENSE"
+    },
+    {
+      "id": "rug",
+      "version": "0.1.0",
+      "file": "artifacts/n0is-rug-macos-arm64.tar.gz",
+      "entrypoint": "PlugIns/libneon_rug.dylib",
+      "format": "tar.gz",
+      "host_abi": 1,
+      "source_url": "https://github.com/MassiveNoobie/n0is-releases",
+      "license_url": "https://github.com/MassiveNoobie/n0is-releases/blob/main/licenses/Rug-MIT.txt"
+    }
+  ],
+  "models": [
+    {
+      "tag": "qwen2.5:1.5b",
+      "roles": [
+        "neo",
+        "drafter"
+      ],
+      "source_url": "https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct",
+      "license_url": "https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct/blob/main/LICENSE"
+    },
+    {
+      "tag": "qwen3:4b",
+      "roles": [
+        "checker"
+      ],
+      "source_url": "https://huggingface.co/Qwen/Qwen3-4B",
+      "license_url": "https://huggingface.co/Qwen/Qwen3-4B/blob/main/LICENSE"
+    },
+    {
+      "tag": "qwen2.5:7b-instruct",
+      "roles": [
+        "planner",
+        "judge"
+      ],
+      "source_url": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct",
+      "license_url": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct/blob/main/LICENSE"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+[
+  {
+    "tag": "qwen2.5:1.5b",
+    "roles": [
+      "neo",
+      "drafter"
+    ],
+    "source_url": "https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct",
+    "license_url": "https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct/blob/main/LICENSE"
+  },
+  {
+    "tag": "qwen3:4b",
+    "roles": [
+      "checker"
+    ],
+    "source_url": "https://huggingface.co/Qwen/Qwen3-4B",
+    "license_url": "https://huggingface.co/Qwen/Qwen3-4B/blob/main/LICENSE"
+  },
+  {
+    "tag": "qwen2.5:7b-instruct",
+    "roles": [
+      "planner",
+      "judge"
+    ],
+    "source_url": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct",
+    "license_url": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct/blob/main/LICENSE"
+  }
+]
